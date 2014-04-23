@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0FF" >
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:imeOptions="actionUnspecified"
+        android:background="#6060FF"
+        android:singleLine="true"
+        android:textSize="60sp" />
+    
+    <TextView 
+        android:id="@+id/android_talk_id"
+        android:layout_below="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"
+        android:text="@string/android_talk"/>
+    
+    <TextView
+        android:layout_below="@+id/serverText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"        
+        android:text="@string/desktop_talk"/>
+
+    <TextView
+        android:id="@+id/serverText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/android_talk_id"        
+        android:background="#6060FF"
+        android:textSize="60sp" />
+    
+</RelativeLayout>
